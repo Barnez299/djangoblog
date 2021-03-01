@@ -1,2 +1,2 @@
 # djangoblog
-Django_Blog
+Django - Blog - Corey Schafer
