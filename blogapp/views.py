@@ -22,12 +22,10 @@ posts = [
 # Create your views here.
 
 def home(request):
+    posts = Post.objects.all()
     
-    context = {
-        'posts': posts,
-    }
 
-    return render(request, 'blogapp/index.html', context)
+    return render(request, 'blogapp/index.html', {'posts': posts})
 
 def about(request):
     return render(request, 'blogapp/about.html')
